@@ -1,0 +1,18 @@
+[MASTER]
+disable=missing-docstring,
+        empty-docstring,
+        line-too-long,
+        too-few-public-methods,
+        too-many-arguments,
+        import-error,
+        fixme,
+        django-not-configured,
+        logging-fstring-interpolation,
+        logging-format-interpolation,
+        invalid-name,
+        duplicate-code,
+        too-many-ancestors,
+# TODO: no-self-use should go away
+# TODO: django-not-configured should go away
+# TODO: too-many-ancestors should go away once we clear a bunch of legacy code
+load-plugins=pylint_django,

@@ -6,7 +6,7 @@ We want like you to create a single endpoint following the following spec using 
 * migration
 * handler
 
-### Create an endpoint 
+### Create an endpoint
 
 Create an endpoint with route: `POST /v1/products/create` that takes in the following request payload.
 
@@ -46,9 +46,9 @@ Create an endpoint with route: `POST /v1/products/create` that takes in the foll
 }
 ```
 
-Here are the explanations on each of the tables. A `Product` has many `ProductVariants`. You will be free to determine the best DB type for each column. Make sure you do foreign key and make any design considerations like you would designing a production ERP/ecommerce system. 
+Here are the explanations on each of the tables. A `Product` has many `ProductVariants`. You will be free to determine the best DB type for each column. Make sure you do foreign key and make any design considerations like you would designing a production ERP/ecommerce system.
 
-The endpoint should create the product and variants ALL in a single transaction and rollback if necessary. You will be expected to write validations in the request body parsing layer (using marshmallow or pydantic). 
+The endpoint should create the product and variants ALL in a single transaction and rollback if necessary. You will be expected to write validations in the request body parsing layer (using marshmallow or pydantic).
 
 ### Product Object 
 
@@ -90,7 +90,7 @@ The endpoint should create the product and variants ALL in a single transaction 
     ]
 }
 ```
-   
+
 |    Attribute    |    Description    |
 |    ---    |    ---    |
 |    id    |    Unique identifier for the object.    |
@@ -99,13 +99,10 @@ The endpoint should create the product and variants ALL in a single transaction 
 |    purchase_price    |  Purchase price of the variant |
 |    config_attributes | Array of dictionaries |
 
-### Testing 
+### Testing
 
 Write a simple test that tests your endpoint functionality using your favourite python testsuite (pytest, unittest, etc.).
 
 ### Deployment (Bonus)
 
-If time permits, deploy the FastAPI API on Heroku (use free dyno). 
-
-
-
+If time permits, deploy the FastAPI API on Heroku (use free dyno).
